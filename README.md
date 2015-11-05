@@ -1,12 +1,19 @@
-<img src="http://www.elao.com/images/corpo/logo_red_small.png"/>
+# Forked!
+
+Fork from https://github.com/ElaoInfra/ansible-role-ohmyzsh
+
+There were errors with ansible-galaxy while installing. 
+
+I guess it's due to the fact that there are no releases or the main branch is not called master in the original repository.
+
+Anyways...
+
 
 # Ansible Role: OhMyZsh (see: [https://github.com/robbyrussell/oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh))
 
 This role will assume the following configuration:
 - Install ohmyzsh globally
 - Setup a local zshrc file
-
-It's part of the ELAO [Ansible stack](http://ansible.elao.com) but can be used as a stand alone component.
 
 ## Requirements
 
