@@ -1,6 +1,6 @@
 # Forked!
 
-Fork from https://github.com/ElaoInfra/ansible-role-ohmyzsh
+Fork from https://github.com/mychiaraInfra/ansible-role-ohmyzsh
 
 There were errors with ansible-galaxy while installing. 
 
@@ -28,13 +28,13 @@ None.
 Using ansible galaxy:
 
 ```bash
-ansible-galaxy install elao.ohmyzsh
+ansible-galaxy install mychiara.ohmyzsh
 ```
 You can add this role as a dependency for other roles by adding the role to the meta/main.yml file of your own role:
 
 ```yaml
 dependencies:
-  - { role: elao.ohmyzsh }
+  - { role: mychiara.ohmyzsh }
 ```
 
 ## Role Handlers
@@ -45,7 +45,7 @@ None
 
 |Name|Default|Type|Description|
 |----|----|-----------|-------|
-`elao_ohmyzsh_users`|Array|Array|Collection of users with ohmyzsh custom configurations.
+`mychiara_ohmyzsh_users`|Array|Array|Collection of users with ohmyzsh custom configurations.
 `user.name`|-|String|Name of the user (Need to match a unix system username).
 `user.theme`|-|String|OhMyZsh theme see: [OhMyZsh themes](https://github.com/robbyrussell/oh-my-zsh/wiki/themes).
 `user.plugins`|-|Array|Array of ohmyzsh plugins see: [OhMyZsh plugins](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins)
@@ -55,11 +55,11 @@ None
 ```
 ---
 
-elao_ohmyzsh_users:
+mychiara_ohmyzsh_users:
   - name:    root
     theme:   pygmalion
     plugins: ['debian', 'common-aliases', 'history', 'history-substring-search']
-  - name:    elao
+  - name:    mychiara
     theme:   pygmalion
     plugins: ['debian', 'common-aliases', 'history', 'history-substring-search']
 ```
@@ -68,12 +68,12 @@ elao_ohmyzsh_users:
 
     - hosts: servers
       roles:
-         - { role: elao.ohmyzsh }
+         - { role: mychiara.ohmyzsh }
 
 # Licence
 
-MIT
+GPLv2
 
 # Author information
 
-ELAO [**(http://www.elao.com/)**](http://www.elao.com)
+mychiara [(http://www.mychiara.com/)](http://www.mychiara.com)

@@ -4,11 +4,11 @@ dependencies: []
 
 galaxy_info:
 
-  author:              Elao
-  company:             Elao
+  author:              mychiara
+  company:             mychiara
   description: >
-    An oh-my-zsh role for elao symfony standard vagrant box
-  license:             MIT
+    Installs ohmyzsh on a user basis
+  license:             GPLv2
   min_ansible_version: 1.9.0
   platforms:
     - name: Debian
