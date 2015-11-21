@@ -70,10 +70,16 @@ mychiara_ohmyzsh_users:
       roles:
          - { role: mychiara.ohmyzsh }
 
-# Licence
+## Contributing
 
-GPLv2
+In lieu of a formal styleguide, take care to maintain the existing coding style. Would be create if you added unit tests, that's on my todo list aswell :]
 
-# Author information
+1. Fork it
+2. Create your feature branch (git checkout -b feature/my-cool-new-feature)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin feature/my-new-feature)
+5. Create new Pull Request
 
-mychiara [(http://www.mychiara.com/)](http://www.mychiara.com)
+## License
+
+Copyright (c) mychiara | svs under the GPLv2 license.
