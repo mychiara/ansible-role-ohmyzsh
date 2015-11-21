@@ -1,15 +1,4 @@
-# Forked!
-
-Fork from https://github.com/mychiaraInfra/ansible-role-ohmyzsh
-
-There were errors with ansible-galaxy while installing. 
-
-I guess it's due to the fact that there are no releases or the main branch is not called master in the original repository.
-
-Anyways...
-
-
-# Ansible Role: OhMyZsh (see: [https://github.com/robbyrussell/oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh))
+# Ansible Role: OhMyZsh 
 
 This role will assume the following configuration:
 - Install ohmyzsh globally
