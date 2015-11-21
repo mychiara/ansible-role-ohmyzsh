@@ -52,7 +52,7 @@ None
 
 ### Configuration example
 
-```
+```yaml
 ---
 
 mychiara_ohmyzsh_users:
