@@ -55,9 +55,11 @@ mychiara_ohmyzsh_users:
 
 ## Example playbook
 
+```yaml
     - hosts: servers
       roles:
          - { role: mychiara.ohmyzsh }
+```
 
 ## Contributing
 
