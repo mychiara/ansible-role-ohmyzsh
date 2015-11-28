@@ -10,5 +10,5 @@
 - name: users > Shells
   user:
     name: "{{ item.user }}"
-    shell: /bin/zsh
+    shell: "{{ mychiara_ohmyzsh_zsh_path | default(/bin/zsh) }}"
   with_items: mychiara_ohmyzsh_users
