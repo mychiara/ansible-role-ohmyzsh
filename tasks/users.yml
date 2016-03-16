@@ -5,10 +5,10 @@
     src:   "{{ item.template|default(mychiara_ohmyzsh_users_template) }}"
     dest:  "{{ item.home|default('/root' if item.user == 'root' else '/home/' ~ item.user) }}/.zshrc"
     owner: "{{ item.user }}"
-  with_items: mychiara_ohmyzsh_users
+  with_items: "{{ mychiara_ohmyzsh_users }}"
 
 - name: users > Shells
   user:
     name: "{{ item.user }}"
     shell: "{{ mychiara_ohmyzsh_zsh_path | default('/bin/zsh') }}"
-  with_items: mychiara_ohmyzsh_users
+  with_items: "{{ mychiara_ohmyzsh_users }}"
